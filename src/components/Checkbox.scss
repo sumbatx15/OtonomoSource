@@ -1,0 +1,14 @@
+@import '../assets/global.scss';
+.checkbox-label {
+  background: rgb(245, 245, 245);
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .label {
+    margin-left: .5em;
+  }
+}

@@ -1,0 +1,18 @@
+@import '../assets/global.scss';
+.button {
+  background-color: $primary;
+  border: none;
+  padding: .5em 1em;
+  font-size: 1rem;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($primary, 10%);
+  }
+
+  &:active {
+    background-color: darken($primary, 10%);
+  }
+}

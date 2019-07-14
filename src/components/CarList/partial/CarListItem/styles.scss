@@ -1,0 +1,70 @@
+
+$border: 1px solid rgb(236, 236, 236);
+.car-list-item{
+    font-size: 0.95em;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 600px;
+    color: rgb(35, 52, 63) !important;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(22, 40, 54, 0.068);
+    // border: $border;
+    >.header{
+        border-bottom: $border;
+        padding: 10px 15px;;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        >:nth-child(n+2){
+            margin-left: 10px;
+        }
+    }
+
+    >.content{
+        display: flex;
+        height: 200px;
+        .loading{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-bar{
+            max-width: 80px;
+        }
+        >.car-data{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            padding: 0px 20px;
+            .detail{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                min-width: 60px;
+            }
+            >:nth-child(n+2){
+                margin-top: 10px;
+            }
+        }
+        >.location{
+            min-width: 500px;
+            box-shadow: inset 3px 3px 15px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            position: relative;
+            background-image: url('../../../../assets/imgs/map.png');
+            i{
+                color: white;
+                text-shadow: 0 0 5px black;
+                font-size: 1.1em;
+            }
+        }
+        >.time{
+            font-size: 0.7em;
+            font-weight: bold
+        }
+    }
+}

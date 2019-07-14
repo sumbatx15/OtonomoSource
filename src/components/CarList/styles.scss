@@ -1,0 +1,16 @@
+$border: 1px solid #E4E4E4;
+.car-list{
+    padding: 30px;
+    flex: 1;
+    &>:nth-child(n+2){
+        margin-top: 30px;
+    }
+    >.header{
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.048);
+    }
+    >.list{
+        &>:nth-child(n+2){
+            margin-top: 30px;
+        }
+    }
+}

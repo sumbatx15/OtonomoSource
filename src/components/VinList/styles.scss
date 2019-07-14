@@ -1,0 +1,8 @@
+.vin-list{
+    display: flex;
+    flex-flow: column;
+    padding: 30px 20px;
+    &>:nth-child(n+2){
+        margin-top: 10px;
+    }
+}
